@@ -1,15 +1,7 @@
 <<<<<<< HEAD
-# Python Flask app on Azure App Service Web
+# Python Flask Web app on K-Means Clustering of datasets in IBM Bluemix Cloud
+ This web application is done using Python and Flask to perform K-means Clustering on two datasets namely:titanic and earthquake. The results were depicted in the form of charts such as pie, bar and scatter using Google Charts.
+ 
+Some queries were performed on the datasets to retrieve results which were shown in charts.
 
-This is a minimal sample app that demonstrates how to run a Python Flask application on Azure App Service Web.
 
-This repository can directly be deployed to Azure App Service.
-
-For more information, please see the [Python on App Service Quickstart docs](https://docs.microsoft.com/en-us/azure/app-service-web/app-service-web-get-started-python).
-
-# Contributing
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-=======
-# cloud_uta
->>>>>>> 813e984da91fdd5feb4f69096e160269aca4df24
