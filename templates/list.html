@@ -1,0 +1,62 @@
+<!--Name:PRADEEP RAVICHANDRAN
+ID:1001553352
+CSE 6331-Cloud Computing
+Assignment 4
+-->
+<!doctype html>
+<html>
+
+   <body>
+   <center>
+       <h2>Pradeep Ravichandran</h2>
+         <h2>1001553352</h2>
+         <header> <h1> Table lists the record of passengers who travelled and survived when Titanic sank. </h1>
+      </header>
+   </center>
+
+
+      <br> <br>
+      <table border = 1>
+         <thead>
+            <td>pclass</td>
+            <td>survived</td>
+            <td>name</td>
+            <td>sex</td>
+            <td>age</td>
+            <td>sibsp</td>
+            <td>parch</td>
+             <td>ticket</td>
+             <td>fare</td>
+             <td>cabin</td>
+            <td>embarked</td>
+            <td>boat</td>
+             <td>body</td>
+              <td>home.dest</td>
+
+         </thead>
+
+         {% for row in row %}
+         <tr>
+            <td>{{row[0]}}</td>
+            <td>{{row[1]}}</td>
+            <td> {{row[2]}}</td>
+            <td>{{row[3]}}</td>
+            <td>{{row[4]}}</td>
+            <td> {{row[5]}}</td>
+             <td>{{row[6]}}</td>
+            <td>{{row[7]}}</td>
+            <td> {{row[8]}}</td>
+            <td>{{row[9]}}</td>
+             <td>{{row[10]}}</td>
+             <td> {{row[11]}}</td>
+            <td>{{row[12]}}</td>
+             <td>{{row[13]}}</td>
+
+         </tr>
+         {% endfor %}
+      </table>
+
+      <br>
+      <h2> <a href = "/">Home</a> </h2>
+   </body>
+</html>

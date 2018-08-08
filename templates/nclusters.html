@@ -1,0 +1,23 @@
+<!--Name:PRADEEP RAVICHANDRAN
+ID:1001553352
+CSE 6331-Cloud Computing
+Assignment 4
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+ <form action="{{ url_for('kmeansclustering') }}" method="POST" enctype = "multipart/form-data">
+            Enter the number of Clusters:  <input type="number" name="nclusters"><br>
+            Enter Attribute 1: <input type="text" name="attr1"><br>
+            Enter Attribute 1: <input type="text" name="attr2"><br>
+            <br>
+            <input type="submit" name="Submit"><br>
+            </form>
+    </center>
+</body>
+</html>

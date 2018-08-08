@@ -1,0 +1,46 @@
+<!--Name:PRADEEP RAVICHANDRAN
+ID:1001553352
+CSE 6331-Cloud Computing
+Assignment 4
+-->
+<!doctype html>
+<html>
+	<body background="./static/cloudbg.jpg">
+
+		<center>
+		<header> <h1 style="color:white"><i>Welcome to My IBM Cloud Demo !!</i>  </h1> </header>
+		<br> <br>
+            <h1 style="color:white">Pradeep Ravichandran</h1>
+            <h2 style="color:white">1001553352</h2>
+            <h2 style="color:white">{{size}}</h2>
+            <h3 style="color:white"> You can Upload CSV File here !! </h3>
+            <form action="{{ url_for('csvtitanic') }}" method="POST" enctype = "multipart/form-data">
+            CSV File for Titanic Data:  <input type="file" name="myfile"><br>
+            <br>
+            <input type="submit" name="Submit"><br>
+            </form>
+            <br>
+             <form action="{{ url_for('csvearthquake') }}" method="POST" enctype = "multipart/form-data">
+            CSV File for Earthquake Data:  <input type="file" name="myfile"><br>
+            <br>
+            <input type="submit" name="Submit"><br>
+            </form>
+            <br>
+
+            <br>
+           <!-- <h2><a href="/cabpic">Display Picture using Last name</a> </h2>
+            <h2><a href="/loc">Location</a></h2>
+            <h2><a href="/kmeanscluster">Update</a></h2>
+            <h2><a href="/far">Fare Range</a></h2>-->
+            <h2 ><a href="/fsurvivor" style="color:white">Percentage of Female Survivors - Pie Chart</a></h2>
+             <h2><a href="/msurvivor" style="color:white">Percentage of Male Survivors - Bar Chart</a></h2>
+            <h2><a href="/magrange" style="color:white">Earthquake within a week (Mag 2.0-6.5) - Pie Chart</a></h2>
+            <h2><a href="/magpie" style="color:white">Earthquake within a week (Mag 2.0-6.5) - Horizontal Bar Chart</a></h2>
+            <h2><a href="/kmeanscluster" style="color:white">K Means Clustering</a></h2>
+            <h2><a href="/getsize" style="color:white">Size of the Directory</a></h2>
+            <h2><a href = "/lists" style="color:white">Retrieve Titanic Table</a></h2>
+            <h2><a href = "/listsearthquake" style="color:white">Retrieve Earthquake Table</a></h2>
+
+        </center>
+	</body>
+</html>

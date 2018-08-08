@@ -1,0 +1,49 @@
+<html>
+  <head>
+      <center>
+        <h2>Pradeep Ravichandran</h2>
+            <h2>1001553352</h2>
+                <h2>Number of Cluster Centroids : {{n}}</h2>
+                <h2>Total Number of Cluster points : {{totpts}}</h2>
+                <h2>Number of points in each cluster: {{points}}</h2>
+                <h2>Average Silhouette Score: {{silhouette_avg}}</h2>
+              <h2>Distance between Cluster Centers: {{dist}}</h2>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Fare','Centroid'],
+          [{{C[0][0]}},{{C[0][1]}}],
+          [{{C[1][0]}},{{C[1][1]}}],
+          [ {{C[2][0]}},{{C[2][1]}}],
+          [ {{C[3][0]}},{{C[3][1]}}],
+          [ {{C[4][0]}},{{C[4][1]}}],
+          [ {{C[5][0]}},{{C[5][1]}}],
+          [ {{C[6][0]}},{{C[6][1]}}],
+          [ {{C[7][0]}},{{C[7][1]}}]
+        ]);
+
+        var options = {
+          title: 'Centroids for 8 Clusters',
+          hAxis: {title: 'Fare'},
+          vAxis: {title: 'Age'},
+          legend: 'none'
+        };
+
+        var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
+
+        chart.draw(data, options);
+      }
+
+    </script>
+          </center>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+
+  </body>
+</html>
