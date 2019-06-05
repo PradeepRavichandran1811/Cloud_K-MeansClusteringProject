@@ -1,7 +1,5 @@
-#Name:PRADEEP RAVICHANDRAN
-#ID:1001553352
+#Author:PRADEEP RAVICHANDRAN
 #CSE 6331-Cloud Computing
-#Assignment 5
 
 #References
 #google charts
